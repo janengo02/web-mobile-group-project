@@ -1,2 +1,2 @@
 # web-mobile-group-project
-text
+This is the homepage
