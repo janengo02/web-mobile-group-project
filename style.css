@@ -1,0 +1,56 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+    text-decoration: inherit;
+    color: #42b4d6;
+    cursor: pointer;
+}
+
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	box-sizing: border-box;
+	padding: 15px;
+	padding-left: 8%;
+	padding-right: 8%;
+
+}
+.h-shade{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.8;
+	z-index: -1;
+}
+.logo{
+	height: 45px;
+	margin-right: 20px;
+}
+.title{
+	font-family: arial;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	font-size: 28px;
+	vertical-align: middle;
+	line-height: normal;
+	
+}
+
+
+.body-container{
+	width: 100%;
+	position: relative;
+	height: 2000px;
+}
+.wlcm-background{
+	width: 100%;
+}
