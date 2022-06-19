@@ -33,6 +33,7 @@ a{
 .logo{
 	height: 45px;
 	margin-right: 20px;
+	cursor: pointer;
 }
 .title{
 	font-family: arial;
@@ -41,7 +42,7 @@ a{
 	color: white;
 	font-size: 28px;
 	margin-top: 5px;
-	cursor: arrow;
+	cursor: pointer;
 }
 .menu-container{
 	display: flex;
@@ -262,6 +263,7 @@ a{
     padding-right: 13%;
     max-height: 524px;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 .news-header {
     color: #00497E;
@@ -339,10 +341,161 @@ a{
 
 
 
+.banner{
+	width: 100%;
+	max-height: 550px;
+	overflow: hidden;
+	position: relative;
+	
+}
+.banner-img{
+	width: 100%;
+}
+.banner-box-1{
+	position: absolute;
+	z-index: 99;
+	right: 13%;
+	top: 80px;
+	width: 330px;
+	height: 300px;
+	box-sizing: border-box;
+	padding: 30px;
+	padding-top: 60px;
+
+}
+.b-color{
+	background: #FFE45C;
+	opacity: 0.8;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 12px;
+}
+.banner-header{
+	font-family: arial;
+	font-weight: 800;
+	color: #00497E;
+	margin-bottom: 20px;
+}
+.banner-text{
+	color: #00497E;
+	justify-content: space-between;
+	font-size: 15px;
+}
+.banner-btn{
+	margin-top: 25px;
+	background-color: #00497E;
+	color: white;
+	font-family: arial;
+	padding: 12px;
+	padding-left: 17px;
+	padding-right: 17px;
+	border-radius: 10px;
+	position: absolute;
+	right: 30px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+.banner-btn:hover{
+	opacity: 0.6;
+}
+.banner-box-2{
+	position: absolute;
+	z-index: 99;
+	left: 13%;
+	top: 80px;
+	width: 330px;
+	height: 300px;
+	box-sizing: border-box;
+	padding: 30px;
+	padding-top: 60px;
+
+}
+
+
+
+
 
 
 .footer{
-	height: 400px;
+	height: 320px;
 	background-color: #001926;
-	margin-top: 100px;
+	box-sizing: border-box;
+	padding-top: 50px;
+	color: white;
+	font-family: arial;
+	display: flex;
+	width: 100%;
+}
+.f-left{
+	width: 40%;
+	box-sizing: border-box;
+	padding-left: 8%;
+}
+.f-title{
+	display: flex;
+	margin-bottom: 30px;
+}
+.f-logo{
+	height: 65px;
+}
+.f-title-text{
+	font-size: 30px;
+	margin-left: 20px;
+	
+	font-weight: bold;
+	margin-top: 10px;
+}
+.address{
+	margin-bottom: 10px;
+}
+.telephone{
+	margin-bottom: 10px;
+}
+.email{
+	margin-bottom: 10px;
+}
+.f-right{
+	display: flex;
+	margin-top: 10px;
+	text-align: center;
+	width: 60%;
+	box-sizing: border-box;
+	padding-right: 8%;
+	padding-left: 5%;
+	justify-content: end;
+}
+.col{
+	width: 25%;
+	justify-content: center;
+}
+.col-title{
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.col-text:hover{
+	opacity: 0.8;
+}
+.col-text{
+	font-size: 14px;
+	margin-bottom: 7px;
+	cursor: pointer;
+}
+.col-text:hover{
+	opacity: 0.8;
+}
+.col-logo{
+	height: 40px;
+	margin-bottom: 7px;
+	cursor: pointer;
+}
+.col-logo:hover{
+	opacity: 0.8;
 }
