@@ -4,7 +4,7 @@
 }
 a{
     text-decoration: inherit;
-    color: #42b4d6;
+    color: inherit;
     cursor: pointer;
 }
 
@@ -36,7 +36,7 @@ a{
 	cursor: pointer;
 }
 .title{
-	font-family: arial;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: white;
@@ -47,7 +47,7 @@ a{
 .menu-container{
 	display: flex;
 	color: white;
-	font-family: arial;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
 	position: absolute;
 	right: 8%;
@@ -58,9 +58,10 @@ a{
 	margin-right: 30px;
 	cursor: pointer;
 	margin-top: 5px;
+	transition: 350ms;
 }
 .menu-btn:hover{
-	opacity: 0.8;
+	color: #FFE515;
 }
 .login-btn{
 	cursor: pointer;
@@ -428,7 +429,7 @@ a{
 	box-sizing: border-box;
 	padding-top: 50px;
 	color: white;
-	font-family: arial;
+	font-family: 'Source Sans Pro', sans-serif;
 	display: flex;
 	width: 100%;
 }
@@ -479,6 +480,7 @@ a{
 	text-transform: uppercase;
 	margin-bottom: 20px;
 	cursor: pointer;
+	font-size: 18px;
 }
 .col-text:hover{
 	opacity: 0.8;
