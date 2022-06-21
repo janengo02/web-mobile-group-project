@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yale School of Arts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+
+	<style>
+		#map{
+			height: 500px;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="h-shade"></div>
+		<img class="logo" src="img/Yale_School_of_Art.png">
+		<h1 class="title">Yale school of arts</h1>
+		<div class="menu-container">
+			<p class="menu-btn">For Future Students</p>
+			<p class="menu-btn"><a href="people.html">People</a></p>
+			<p class="menu-btn">About Us</p>
+			<p class="menu-btn">Contact Us</p>
+			<p class="login-btn">Log In</p>
+		</div>
+	</div>
+	</div>
+	<div class="body-container">
+		<div class="body-header">
+			<div class="shade-layer"></div>
+			<img class="body-header-img1" src="img/242499422_1538569183162854_6439526897569034277_n.jpg">
+			<img class="body-header-img" src="img/2012_12_06_16-41-27_DSC_9344.jpg">
+			<p class="header-img-text">Our socials</p>
+			
+		</div>
+
+		<div class="socials">
+			<div class="socials-box">
+			<div class="socials-txt-img">
+				<img class="logo-img" src="img/instagram.png">
+				<a href="https://www.instagram.com/yaleschoolofart/" class="socials-txt">@yaleschoolofart</a>
+			</div>
+				<a href="https://www.instagram.com/yaleschoolofart/"><img class="socials-img" src="img/280487671_949596565714458_3867694566712027339_n.jpg"></a>
+			</div>	
+
+			<div class="socials-box1">
+			<div class="socials-txt-img">
+				<img class="logo-img" src="img/facebook.png">
+				<a href="https://www.facebook.com/YaleSchoolofArt/" class="socials-txt">Yale School of Art</a>
+			</div>
+				<a href="https://www.facebook.com/YaleSchoolofArt/"><img class="socials-img" src="img/280471447_368642438656832_2282795916945230192_n.jpg"></a>
+			</div>	
+
+			<div class="socials-box2">
+			<div class="socials-txt-img">
+				<img class="logo-img" src="img/youtube.png">
+				<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA" class="socials-txt">Yale School of Art</a>
+			</div>
+				<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA"><img class="socials-img" src="img/youtubeSS.png"></a>
+			</div>	
+		</div>
+
+		<div class="message">
+			<h1 class="message-header">Write us message here for a quick response</h1>
+			<div class="message-box">
+				<input type="text" name="First-name" placeholder="First name" class="box-name">
+				<input type="text" name="Last-name" placeholder="Last name" class="box-name1">
+				<input type="text" name="email" placeholder="Email" class="box-email">
+				<input type="text" name="phone-number" placeholder="Phone number" class="box-email">
+			</div>
+			<div class="message1">
+					<input type="text" name="phone-number" placeholder="Your message" class="box-message">
+			</div>
+		</div>
+
+		<div class="map">
+			<h1 class="map-header">Find us on Google Maps</h1>
+			<div id="map"></div>
+		</div>
+		
+	</div>
+
+<script>
+	function initMap() {
+		var location = {lat: -82.208977, lng: 38.891079};
+		var map = new google.maps.Map(document.getElementById("map"),{
+			zoom: 4,
+			center: location
+		});
+		var marker = new google.maps.Marker({
+			position:location,
+			map:map
+		});
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHG7KhxNAxfQBlu6yU188aM9n9wUjv390&callback=initMap"></script>
+
+
+<div class="footer">
+		<div class="f-left">
+			<div class="f-title">
+				<img class="f-logo" src="img/Yale_School_of_Art.png">
+				<p class="f-title-text">Yale School of Arts</p>
+			</div>
+			<p class="address">1156 Chapel St, New Haven, CT 06511, United States</p>
+			<p class="telephone">Telephone: +1 203-432-2600</p>
+			<p class="email">Email: art.help@yale.edu</p>
+		</div>
+		<div class="f-right">
+			<div class="col">
+				<p class="col-title">Explore</p>
+				<p class="col-text">About Us</p>
+				<p class="col-text">People</p>
+				<p class="col-text">Facilities</p>
+				<p class="col-text">Student Life</p>
+				<p class="col-text">News</p>
+				<p class="col-text">Public Events</p>
+				<p class="col-text">Wall Art</p>
+			</div>
+			<div class="col">
+				<p class="col-title">Apply</p>
+				<p class="col-text">Study Areas</p>
+				<p class="col-text">Summer Programs</p>
+				<p class="col-text">Enrollment Procedures</p>
+				<p class="col-text">Opportunities</p>
+			</div>
+			<div class="col">
+				<p class="col-title">Contact</p>
+				<p class="col-text">Contact Us</p>
+				<p class="col-text">Map</p>
+			</div>
+			<div class="col">
+				<p class="col-title">Socials</p>
+				<a class="col-link" href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA"><img class="col-logo" src="img/youtube.png"></a>
+				<br>
+				<a class="col-link" href="https://www.facebook.com/YaleSchoolofArt/"><img class="col-logo" src="img/facebook.png"></a>
+				<br>
+				<a class="col-link" href="https://www.instagram.com/yaleschoolofart/"><img class="col-logo" src="img/instagram.png"></a>
+			</div>
+		</div>
+	</div>	
+
+</body>
+</html>
+
+
+				
+				
+			
