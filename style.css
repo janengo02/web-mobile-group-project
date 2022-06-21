@@ -1,3 +1,4 @@
+@import "footer.css";
 *{
 	margin: 0px;
 	padding: 0px;
@@ -423,81 +424,3 @@ a{
 
 
 
-.footer{
-	height: 320px;
-	background-color: #001926;
-	box-sizing: border-box;
-	padding-top: 50px;
-	color: white;
-	font-family: 'Source Sans Pro', sans-serif;
-	display: flex;
-	width: 100%;
-}
-.f-left{
-	width: 40%;
-	box-sizing: border-box;
-	padding-left: 8%;
-}
-.f-title{
-	display: flex;
-	margin-bottom: 30px;
-}
-.f-logo{
-	height: 65px;
-}
-.f-title-text{
-	font-size: 30px;
-	margin-left: 20px;
-	
-	font-weight: bold;
-	margin-top: 10px;
-}
-.address{
-	margin-bottom: 10px;
-}
-.telephone{
-	margin-bottom: 10px;
-}
-.email{
-	margin-bottom: 10px;
-}
-.f-right{
-	display: flex;
-	margin-top: 10px;
-	text-align: center;
-	width: 60%;
-	box-sizing: border-box;
-	padding-right: 8%;
-	padding-left: 5%;
-	justify-content: end;
-}
-.col{
-	width: 25%;
-	justify-content: center;
-}
-.col-title{
-	font-weight: bold;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	cursor: pointer;
-	font-size: 18px;
-}
-.col-text:hover{
-	opacity: 0.8;
-}
-.col-text{
-	font-size: 14px;
-	margin-bottom: 7px;
-	cursor: pointer;
-}
-.col-text:hover{
-	opacity: 0.8;
-}
-.col-logo{
-	height: 40px;
-	margin-bottom: 7px;
-	cursor: pointer;
-}
-.col-logo:hover{
-	opacity: 0.8;
-}
