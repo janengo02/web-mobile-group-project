@@ -8,6 +8,29 @@ a{
     color: inherit;
     cursor: pointer;
 }
+.upd-height{
+	transition: 650ms;
+	padding-top: 10px!important;
+	padding-bottom: 10px!important;
+}
+.upd-shade{
+	opacity: 1!important;
+}
+.upd_title{
+	margin-top: 3px!important;
+}
+.upd_items{
+	top: 15px!important;
+}
+
+
+
+
+
+
+
+
+
 
 .header{
 	width: 100%;
@@ -19,6 +42,7 @@ a{
 	padding: 15px;
 	padding-left: 8%;
 	padding-right: 8%;
+	transition: 350ms;
 
 }
 .h-shade{
@@ -30,6 +54,7 @@ a{
 	background-color: black;
 	opacity: 0.8;
 	z-index: -1;
+	transition: 350ms;
 }
 .logo{
 	height: 45px;
@@ -44,6 +69,7 @@ a{
 	font-size: 28px;
 	margin-top: 5px;
 	cursor: pointer;
+	transition: 350ms;
 }
 .menu-container{
 	display: flex;
@@ -53,7 +79,7 @@ a{
 	position: absolute;
 	right: 8%;
 	top: 20px;
-
+	transition: 350ms;
 }
 .menu-btn{
 	margin-right: 30px;
