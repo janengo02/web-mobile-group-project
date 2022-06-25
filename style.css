@@ -31,7 +31,37 @@ a{
 
 
 
-
+.drop-menu{
+	width: 200px;
+	top: 30px;
+	left: -20px;
+	position: absolute;
+	border-radius: 0px 0px 10px 10px;
+	z-index: 2;
+	max-height: 0px;
+	box-sizing: border-box;
+	overflow: hidden;
+	transition: 650ms;
+	padding-top: 20px;
+}
+.drop-tab{
+	text-align: center;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	cursor: pointer;
+	font-size: 17px;
+	padding-bottom: 15px;
+	z-index: -1;
+	background-color: black;
+}
+.drop-wrap:hover .drop-menu{
+	top: 30px!important;
+	max-height: 272px;
+}
+.drop-tab:hover{
+	color: #FFE515;
+}
 .header{
 	width: 100%;
 	position: fixed;
@@ -43,7 +73,14 @@ a{
 	padding-left: 8%;
 	padding-right: 8%;
 	transition: 350ms;
+	z-index: 100;
 
+}
+.z100{
+	z-index: 111!important;
+}
+.z0{
+	z-index: -1!important;
 }
 .h-shade{
 	width: 100%;
@@ -53,13 +90,14 @@ a{
 	left: 0;
 	background-color: black;
 	opacity: 0.8;
-	z-index: -1;
+	z-index: 99;
 	transition: 350ms;
 }
 .logo{
 	height: 45px;
 	margin-right: 20px;
 	cursor: pointer;
+	z-index: 100;
 }
 .title{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -70,6 +108,7 @@ a{
 	margin-top: 5px;
 	cursor: pointer;
 	transition: 350ms;
+	z-index: 100;
 }
 .menu-container{
 	display: flex;
@@ -86,6 +125,7 @@ a{
 	cursor: pointer;
 	margin-top: 5px;
 	transition: 350ms;
+	z-index: 111;
 }
 .menu-btn:hover{
 	color: #FFE515;
@@ -102,6 +142,7 @@ a{
 	font-size: 16px;
 	margin-top: 2px;
 	color: #AD0D09;
+	z-index: 100;
 }
 .login-btn:hover{
 	opacity: 0.8;

@@ -1,4 +1,5 @@
 @import "footer.css";
+@import "header.css";
 *{
 	margin: 0px;
 	padding: 0px;
@@ -9,81 +10,6 @@ a{
     cursor: pointer;
 }
 
-
-.header{
-	width: 100%;
-	position: fixed;
-	top: 0;
-	z-index: 999;
-	display: flex;
-	box-sizing: border-box;
-	padding: 15px;
-	padding-left: 8%;
-	padding-right: 8%;
-
-}
-.h-shade{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: black;
-	opacity: 0.8;
-	z-index: -1;
-}
-.logo{
-	height: 45px;
-	margin-right: 20px;
-	cursor: pointer;
-}
-.title{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: white;
-	font-size: 28px;
-	margin-top: 5px;
-	cursor: pointer;
-}
-.menu-container{
-	display: flex;
-	color: white;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 20px;
-	position: absolute;
-	right: 8%;
-	top: 20px;
-
-}
-.menu-btn{
-	margin-right: 30px;
-	cursor: pointer;
-	margin-top: 5px;
-	transition: 350ms;
-}
-.menu-btn:hover{
-	color: #FFE515;
-}
-.this-page{
-	color: #FFE515!important;
-}
-.login-btn{
-	cursor: pointer;
-	background: white;
-	color: red;
-	padding: 5px;
-	padding-left: 25px;
-	padding-right: 25px;
-	border-radius: 8px; 
-	font-weight: bold;
-	font-size: 16px;
-	margin-top: 2px;
-	color: #AD0D09;
-}
-.login-btn:hover{
-	opacity: 0.8;
-}
 
 
 

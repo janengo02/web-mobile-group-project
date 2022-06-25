@@ -1,0 +1,139 @@
+.upd-height{
+	transition: 650ms;
+	padding-top: 10px!important;
+	padding-bottom: 10px!important;
+}
+.upd-shade{
+	opacity: 1!important;
+}
+.upd_title{
+	margin-top: 3px!important;
+}
+.upd_items{
+	top: 15px!important;
+}
+
+
+
+
+
+
+
+
+
+.drop-menu{
+	width: 200px;
+	top: 30px;
+	left: -20px;
+	position: absolute;
+	border-radius: 0px 0px 10px 10px;
+	z-index: 2;
+	max-height: 0px;
+	box-sizing: border-box;
+	overflow: hidden;
+	transition: 650ms;
+	padding-top: 20px;
+}
+.drop-tab{
+	text-align: center;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	cursor: pointer;
+	font-size: 17px;
+	padding-bottom: 15px;
+	z-index: -1;
+	background-color: black;
+}
+.drop-wrap:hover .drop-menu{
+	top: 30px!important;
+	max-height: 272px;
+}
+.drop-tab:hover{
+	color: #FFE515;
+}
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	box-sizing: border-box;
+	padding: 15px;
+	padding-left: 8%;
+	padding-right: 8%;
+	transition: 350ms;
+	z-index: 100;
+
+}
+.z100{
+	z-index: 999!important;
+}
+.z0{
+	z-index: -1!important;
+}
+.h-shade{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.8;
+	z-index: 99;
+	transition: 350ms;
+}
+.logo{
+	height: 45px;
+	margin-right: 20px;
+	cursor: pointer;
+	z-index: 100;
+}
+.title{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	font-size: 28px;
+	margin-top: 5px;
+	cursor: pointer;
+	transition: 350ms;
+	z-index: 100;
+}
+.menu-container{
+	display: flex;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	position: absolute;
+	right: 8%;
+	top: 20px;
+	transition: 350ms;
+}
+.menu-btn{
+	margin-right: 30px;
+	cursor: pointer;
+	margin-top: 5px;
+	transition: 350ms;
+	z-index: 111;
+}
+.menu-btn:hover{
+	color: #FFE515;
+}
+.login-btn{
+	cursor: pointer;
+	background: white;
+	color: red;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 8px; 
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 2px;
+	color: #AD0D09;
+	z-index: 100;
+}
+.login-btn:hover{
+	opacity: 0.8;
+}

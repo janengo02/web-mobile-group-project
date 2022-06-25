@@ -12,13 +12,13 @@ let menu_items = document.querySelector(".menu-container");
 let scoll_past = document.querySelector('.wlcm-container');
 
 
-function add_shade() {
+function small_menu() {
 	height.classList.add("upd-height");
     shade.classList.add("upd-shade");
     title.classList.add("upd_title");
     menu_items.classList.add("upd_items");
 }
-function remove_shade() {
+function big_menu() {
 	height.classList.remove("upd-height");
     shade.classList.remove("upd-shade");
     title.classList.remove("upd_title");
@@ -28,14 +28,21 @@ function remove_shade() {
 window.onscroll = function(){
 
     if(window.scrollY > 780){
-        add_shade();
+        small_menu();
     }
     if(window.scrollY < 780){
-        remove_shade();
+        big_menu();
     }
 }
 
-function hovered() {
-    shade.classList.toggle("upd-shade");
+function add_shade() {
+    shade.classList.add("upd-shade");
 }
+function remove_shade() {
+	if(window.scrollY < 780){
+        shade.classList.remove("upd-shade");
+    }
+    
+}
+
 

@@ -7,16 +7,32 @@
 	<link rel="stylesheet" type="text/css" href="fonts.css">
 </head>
 <body>
-	<div class="header" onmouseover="hovered()" onmouseout="hovered()">
+	<div class="header" onmouseover="add_shade()" onmouseout="remove_shade()">
 		<div class="h-shade"></div>
-		<a href="index.html"><img class="logo" src="img/Yale_School_of_Art.png"></a>
-		<a href="index.html"><h1 class="title">Yale school of arts</h1></a>
-		<div class="menu-container">
-			<p class="menu-btn">For Future Students</p>
+		<a href="index.html" class="z100"><img class="logo" src="img/Yale_School_of_Art.png"></a>
+		<a href="index.html" class="z100"><h1 class="title">Yale school of arts</h1></a>
+		<div class="menu-container" >
+			<div class="drop-wrap z100">
+				<p class="menu-btn " >For Future Students</p>
+				<div class="drop-menu z0">
+					<p class="drop-tab">
+						<a href="Academics.html">Academics</a>
+					</p>
+					<p class="drop-tab">Admissions</p>
+					<p class="drop-tab">
+						<a href="Courses.html">Courses</a>
+					</p>
+					<p class="drop-tab">
+						<a href="How-to-apply.html">How to Apply</a>
+					</p>
+					<p class="drop-tab">Opportunities</p>
+				</div>
+			</div>
+			
 			<p class="menu-btn"><a href="people.html">People</a></p>
 			<p class="menu-btn">About Us</p>
 			<p class="menu-btn"><a href="contact-us.html">Contact Us</p>
-			<a href="my-profile.html"><p class="login-btn">Log In</p></a>
+			<a href="my-profile.html" class="z100"><p class="login-btn">Log In</p></a>
 		</div>
 	</div>
 	<div class="body-container">
