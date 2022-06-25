@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="fonts.css">
+	<link rel="stylesheet" type="text/css" href="chat-box.css">
 </head>
 <body>
 	<div class="header" onmouseover="add_shade()" onmouseout="remove_shade()">
@@ -153,6 +154,23 @@
 			</div>				
 		</div>
 	</div>
+	<!-- -------------CHAT BOX--------------- -->
+	<button class="open-button" onclick="openForm()">
+		<img src="https://img.icons8.com/fluency/48/000000/get-help.png" />
+	</button>
+  
+	<div class="chat-popup" id="myForm">
+		<form action="/action_page.php" class="form-container">
+			<h3>Hello! How can we help you?</h1><br>
+			<textarea placeholder="Type message.." name="msg" required></textarea>
+
+			<button type="submit" class="btn">Send</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">
+			Close
+			</button>
+		</form>
+	</div>
+	<!-- ------------------------------------------ -->
 	<div class="footer">
 		<div class="f-left">
 			<div class="f-title">
@@ -198,4 +216,5 @@
 	</div>
 </body>
 <script type="text/javascript" src="main-scripts.js"></script>
+<script type="text/javascript" src="chat-box.js"></script>
 </html>

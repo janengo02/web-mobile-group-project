@@ -44,5 +44,3 @@ function remove_shade() {
     }
     
 }
-
-
