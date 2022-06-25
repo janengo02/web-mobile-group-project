@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="courses.css">
 	<link rel="stylesheet" type="text/css" href="fonts.css">
-	<script src="courses.js"></script>
+	<link rel="stylesheet" type="text/css" href="chat-box.css">
 </head>
 <body>
 	<div class="header" onmouseover="add_shade()" onmouseout="remove_shade()">
@@ -29,7 +29,7 @@
 			</div>
 			
 			<p class="menu-btn"><a href="people.html">People</a></p>
-			<p class="menu-btn">About Us</p>
+			<p class="menu-btn"><a href="about-us.html">About Us</a></p>
 			<p class="menu-btn"><a href="contact-us.html">Contact Us</p>
 			<a href="my-profile.html" class="z100"><p class="login-btn">Log In</p></a>
 		</div>
@@ -309,8 +309,23 @@
 			</section>
 		</div>
 	</div>
+	<!-- -------------CHAT BOX--------------- -->
+	<button class="open-button" onclick="openForm()">
+		<img src="https://img.icons8.com/fluency/48/000000/get-help.png" />
+	</button>
+  
+	<div class="chat-popup" id="myForm">
+		<form action="/action_page.php" class="form-container">
+			<h3>Hello! How can we help you?</h1><br>
+			<textarea placeholder="Type message.." name="msg" required></textarea>
 
-
+			<button type="submit" class="btn">Send</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">
+			Close
+			</button>
+		</form>
+	</div>
+	<!-- ------------------------------- -->
 	<div class="footer">
 		<div class="f-left">
 			<div class="f-title">
@@ -324,36 +339,37 @@
 		<div class="f-right">
 			<div class="col">
 				<p class="col-title">Explore</p>
-				<p class="col-text">About Us</p>
-				<p class="col-text">People</p>
+				<p class="col-text"><a href="about-us.html">About Us</a></p>
+				<p class="col-text"><a href="people.html">People</a></p>
 				<p class="col-text">Facilities</p>
 				<p class="col-text">Student Life</p>
 				<p class="col-text">News</p>
 				<p class="col-text">Public Events</p>
-				<p class="col-text">Wall Art</p>
+				<p class="col-text">Wall of Art</p>
 			</div>
 			<div class="col">
 				<p class="col-title">Apply</p>
-				<p class="col-text">Study Areas</p>
-				<p class="col-text">Summer Programs</p>
-				<p class="col-text">Enrollment Procedures</p>
+				<p class="col-text"><a href="academics.html">Academics</a></p>
+				<p class="col-text"><a href="courses.html">Courses</a></p>
+				<p class="col-text"><a href="admissions.html">Admissions</a></p>
 				<p class="col-text">Opportunities</p>
 			</div>
 			<div class="col">
 				<p class="col-title">Contact</p>
-				<p class="col-text">Contact Us</p>
-				<p class="col-text">Map</p>
+				<p class="col-text"><a href="contact-us.html">Contact Us</a></p>
+				<p class="col-text"><a href="https://goo.gl/maps/4q7dfnTU7hXNAWcN6">Map</a></p>
 			</div>
 			<div class="col">
 				<p class="col-title">Socials</p>
-				<a class="col-link" href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA"><img class="col-logo" src="img/youtube.png"></a>
+				<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA"><img class="col-logo" src="img/youtube.png"></a>
 				<br>
-				<a class="col-link" href="https://www.facebook.com/YaleSchoolofArt/"><img class="col-logo" src="img/facebook.png"></a>
+				<a href="https://www.facebook.com/YaleSchoolofArt/"><img class="col-logo" src="img/facebook.png"></a>
 				<br>
-				<a class="col-link" href="https://www.instagram.com/yaleschoolofart/"><img class="col-logo" src="img/instagram.png"></a>
+				<a href="https://www.instagram.com/yaleschoolofart/"><img class="col-logo" src="img/instagram.png"></a>
 			</div>
 		</div>
-	</div>	
+	</div>
+
 	<script>
 		const liItem = document.querySelectorAll('ul li');
 		const divItem = document.querySelectorAll('.courses-detail div');
@@ -380,5 +396,7 @@
 		});
 	</script>
 	<script type="text/javascript" src="main-scripts.js"></script>
+	<script src="courses.js"></script>
+	<script type="text/javascript" src="chat-box.js"></script>
 </body>
 </html>
