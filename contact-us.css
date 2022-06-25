@@ -229,6 +229,10 @@ a:hover{
 	font-family: arial;
 	padding-bottom: 30px;
 }
+iframe{
+	width: 100%;
+	height: 500px;
+}
 
 
 
