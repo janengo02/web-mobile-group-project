@@ -39,3 +39,10 @@ function hovered() {
     shade.classList.toggle("upd-shade");
 }
 
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+function closeForm() {
+document.getElementById("myForm").style.display = "none";
+}
