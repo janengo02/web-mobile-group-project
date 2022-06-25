@@ -25,7 +25,7 @@ a {
   width: 100%;
   height: 30px;
   position: fixed;
-  margin-top: -45px;
+  margin-top: 75px;
   z-index: 100;
   display: flex;
   box-sizing: border-box;
@@ -125,103 +125,174 @@ a {
   opacity: 0.8;
 }
 
+.body-header {
+  width: 100%;
+  position: relative;
+  height: 600px;
+}
+.body-header-img {
+  width: 100%;
+  height: 600px;
+  z-index: 1;
+}
+.shade-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.header-img-text {
+  position: absolute;
+  color: white;
+  font-size: 55px;
+  text-align: center;
+  width: 100%;
+  top: 75%;
+  right: 30%;
+  font-family: arial;
+  font-weight: bold;
+}
+.body-header-img1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 300px;
+  right: 46%;
+}
 .body-container {
   width: 100%;
   position: relative;
 }
-.courses {
-  position: relative;
+
+.body-content {
   width: 100%;
+  position: relative;
+  display: flex;
+}
+.body-menu {
+  width: 20%;
+  height: 1400px;
+  position: absolute;
+  background-color: #eeeeee;
   text-align: center;
-  margin-top: 120px;
 }
-.body-header {
-  font-size: 36px;
+.body-btn {
+  position: relative;
+  margin-right: -30%;
+}
+.body-menu-btn {
+  position: relative;
+  margin-top: 60px;
+  align-self: center;
+  font-size: 24px;
   font-family: arial;
-  padding-bottom: 30px;
+  width: 150px;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
 }
-.body-txt {
+.body-menu-btn:hover {
+  font-weight: bold;
+}
+
+.menu-conent {
+  position: absolute;
+  width: 70%;
+  margin-left: 23%;
+  margin-top: 60px;
+}
+.first {
+  position: absolute;
+  display: block;
+  background-color: white;
+}
+
+.second {
+  position: absolute;
+  display: none;
+  background-color: white;
+}
+
+.third {
+  position: absolute;
+  display: none;
+  background-color: white;
+}
+
+.body-ttl {
   font-size: 24px;
   font-family: arial;
   padding-bottom: 30px;
 }
-.departments {
-  width: 90%;
-  border-radius: 20px;
-  background-color: #eeeeee;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
+.body-ttl1 {
+  font-size: 24px;
+  font-family: arial;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
-.departments-name {
+.body-ttl2 {
   font-size: 20px;
   font-family: arial;
-  padding-bottom: 30px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.bdy-txt {
+  display: flex;
   margin-top: 30px;
 }
-
-section {
-  width: 100%;
-  margin: 50px auto;
-}
-section h1 {
+.circle {
+  width: 150px;
+  height: 150px;
+  margin-left: 120px;
+  border-radius: 50%;
+  background-color: #7fa9c6;
   text-align: center;
+}
+
+.center {
+  margin-top: 25%;
+}
+.circle-txt {
+  color: #00548e;
   font-size: 24px;
   font-family: arial;
-  padding-bottom: 30px;
 }
-ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  border-bottom: 2px solid black;
-  padding-bottom: 10px;
-  box-sizing: border-box;
-}
-ul li {
-  list-style: none;
-  margin-right: 30px;
-  margin-left: 30px;
-  cursor: pointer;
-  font-size: 20px;
+.circle-txt1 {
+  color: #00548e;
+  font-size: 36px;
   font-family: arial;
-  padding-bottom: 10px;
 }
-ul li:hover {
-  font-weight: bold;
-  color: #fff200;
-  background-color: #00548e;
-}
-li.active {
-  font-weight: bold;
-  color: #fff200;
-  background-color: #00548e;
-}
-.courses-detail {
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.courses-detail div {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
+.txt {
   margin-left: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: bold;
 }
-.detail-name {
+.txt1 {
+  margin-left: 20px;
+  margin-top: 20px;
   font-size: 20px;
   font-family: arial;
 }
-
+.txt2 {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: arial;
+  color: #00548e;
+}
+.txt4 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: arial;
+}
 .footer {
-  margin-top: 120px;
+  margin-top: 1400px;
   height: 320px;
   background-color: #001926;
   box-sizing: border-box;
