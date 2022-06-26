@@ -25,6 +25,7 @@
   overflow: hidden;
   transition: 650ms;
   padding-top: 20px;
+  opacity: 0.7;
 }
 .drop-tab {
   text-align: center;
@@ -40,6 +41,7 @@
 .drop-wrap:hover .drop-menu {
   top: 30px !important;
   max-height: 272px;
+  opacity: 1;
 }
 .drop-tab:hover {
   color: #ffe515;
@@ -127,4 +129,20 @@
 }
 .login-btn:hover {
   opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-box{
+  display: flex;
 }

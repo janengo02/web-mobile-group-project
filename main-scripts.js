@@ -25,6 +25,8 @@ function big_menu() {
     menu_items.classList.remove("upd_items");
 }
 
+
+//Reduce menu after scrolling past X
 window.onscroll = function(){
 
     if(window.scrollY > 780){
@@ -35,12 +37,80 @@ window.onscroll = function(){
     }
 }
 
+
+
 function add_shade() {
     shade.classList.add("upd-shade");
 }
 function remove_shade() {
 	if(window.scrollY < 780){
         shade.classList.remove("upd-shade");
-    }
-    
+    }    
+}
+
+
+
+
+
+
+//Carousel Slider (Main Page)
+
+
+const sliderBox = document.querySelector('.slider-box');
+const sliderImgs = document.querySelectorAll('.wlcm-background');
+
+
+let counter = 1;
+const size = sliderImgs[0].clientWidth;
+
+
+sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+
+
+
+//Timer
+
+ let intervalID = window.setInterval(rotate, 3500)
+
+ function rotate(){
+
+ 	sliderBox.style.transition = "transform 2000ms ease-in-out";
+ 	counter++;
+
+ 	sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
+ 	//console.log(counter)
+ 
+};
+
+sliderBox.addEventListener('transitionend', () => {
+	console.log(sliderImgs[counter].id);
+	if (sliderImgs[counter].id == 'lastClone') {
+
+		sliderBox.style.transition = "none";
+		counter = sliderImgs.length - 2;
+		sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+	};
+	if (sliderImgs[counter].id == 'firstClone') {
+
+		sliderBox.style.transition = "none";
+		counter = sliderImgs.length - counter;
+		sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
+		stop_slider();
+		continue_slider()
+	};
+	
+});
+
+
+//Stop slider when hovering
+
+
+function stop_slider(){
+	for (var i = 1; i < 99999; i++)
+     window.clearInterval(i);
+}
+function continue_slider(){
+	setInterval(rotate, 3500)
 }
