@@ -115,9 +115,16 @@ function continue_slider(){
 	setInterval(rotate, 5000)
 }
 
+//Check if page is open
 document.addEventListener('visibilitychange', function() {
 	if(document.hidden)
 		stop_slider();
 	else
 		continue_slider();
 });
+
+
+
+
+
+
