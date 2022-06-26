@@ -49,15 +49,22 @@ a {
   padding-bottom: 50px;
 }
 .current-students {
-  width: 100%;
+  width: 74%;
   box-sizing: border-box;
-  padding-left: 13%;
-  padding-right: 13%;
+  margin-left: 13%;
+  margin-right: 12%;
+  padding-right: 1%;
   margin-top: 50px;
+  overflow: hidden;
 }
 .students-container {
   display: flex;
   width: 100%;
+  max-height: 350px;
+}
+.students-slider{
+  width: 200%;
+  display: flex;
 }
 
 .student-box {
@@ -69,6 +76,9 @@ a {
   justify-content: center;
   border-radius: 12px;
   box-shadow: 3px 3px 6px #909090;
+}
+.student-box:nth-child(even){
+  margin-right: 0!important;
 }
 .student-img-container {
   width: 100px;

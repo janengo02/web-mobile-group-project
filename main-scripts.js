@@ -71,7 +71,7 @@ sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 //Timer
 
- let intervalID = window.setInterval(rotate, 3500)
+ let intervalID = window.setInterval(rotate, 5000)
 
  function rotate(){
 
@@ -112,5 +112,12 @@ function stop_slider(){
      window.clearInterval(i);
 }
 function continue_slider(){
-	setInterval(rotate, 3500)
+	setInterval(rotate, 5000)
 }
+
+document.addEventListener('visibilitychange', function() {
+	if(document.hidden)
+		stop_slider();
+	else
+		continue_slider();
+});
