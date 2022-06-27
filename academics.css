@@ -10,119 +10,6 @@ a {
   cursor: pointer;
 }
 
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  display: flex;
-  box-sizing: border-box;
-  padding: 15px;
-  padding-left: 8%;
-  padding-right: 8%;
-}
-.header2 {
-  width: 100%;
-  height: 30px;
-  position: fixed;
-  margin-top: -45px;
-  z-index: 100;
-  display: flex;
-  box-sizing: border-box;
-  padding: 15px;
-  padding-left: 8%;
-  padding-right: 8%;
-}
-.h-shade {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: black;
-  opacity: 0.8;
-  z-index: -1;
-}
-.logo {
-  height: 45px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-.title {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  font-size: 28px;
-  margin-top: 5px;
-  cursor: pointer;
-}
-.menu-container {
-  display: flex;
-  color: white;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
-  position: absolute;
-  right: 8%;
-  top: 20px;
-}
-.menu-container2 {
-  width: 100%;
-  margin-top: -24px;
-  display: flex;
-  color: white;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 24px;
-  position: absolute;
-}
-
-.menu-btn {
-  margin-right: 30px;
-  cursor: pointer;
-  margin-top: 5px;
-  transition: 350ms;
-}
-.menu-btn1 {
-  margin-right: 30px;
-  cursor: pointer;
-  margin-top: 5px;
-  transition: 350ms;
-  color: #ffe515;
-}
-.menu-btn:hover {
-  color: #ffe515;
-}
-.menu-btn2 {
-  margin-right: 50px;
-  cursor: pointer;
-  margin-top: 5px;
-}
-.menu-btn3 {
-  margin-right: 50px;
-  cursor: pointer;
-  margin-top: 5px;
-  color: #ffe515;
-}
-.menu-btn2:hover {
-  color: #ffe515;
-}
-.login-btn {
-  cursor: pointer;
-  background: white;
-  color: red;
-  padding: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: 2px;
-  color: #ad0d09;
-}
-.login-btn:hover {
-  opacity: 0.8;
-}
-
 .body-container {
   width: 100%;
   position: relative;
@@ -136,9 +23,13 @@ a {
 }
 
 .undergrad-header {
-  font-size: 36px;
   font-family: arial;
   padding-bottom: 30px;
+  padding-top: 30px;
+  color: rgb(29, 29, 29);
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
 }
 .txt-img {
   display: flex;
@@ -159,7 +50,8 @@ a {
 }
 .txt-box {
   width: 600px;
-  height: 540px;
+  height: fit-content;
+  padding:50px 50px 50px 70px;
   margin-left:-20px;
   background-color: #eeeeee;
   position: relative;
@@ -170,24 +62,31 @@ a {
   box-shadow: 3px 3px 6px #909090;
 }
 .undergrad-txt1 {
-  margin-left: 50px;
   font-size: 16px;
+  line-height:28px;
 }
 .undergrad-ttl {
-  margin-top: 60px;
-  margin-left: 50px;
   font-size: 18px;
   font-family: arial;
   padding-bottom: 10px;
 }
 .undergrad-link {
-  margin-left: 50px;
-  margin-top: 10px;
-  font-size: 16px;
-  color: #00548e;
+  width: 100%;
+  padding-top: 10px;
+  color: #ed2d23;
+  font-style: italic;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+}
+.undergrad-link:hover {
+  color: #00497e;
 }
 .undergrad-ttl1 {
-  margin-left: 50px;
   margin-top: 20px;
   font-size: 20px;
   font-family: arial;
@@ -205,21 +104,21 @@ a {
   height: 500px;
 }
 .summer-img {
-  width: 100%;
   height: 500px;
+  width: 100% auto;
 }
 .shade-layer {
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .summer-txt {
   position: absolute;
   color: white;
-  font-size: 46px;
+  font-size: 36px;
   text-align: center;
   width: 100%;
   top: 160px;
@@ -229,7 +128,8 @@ a {
 .summer-txt1 {
   position: absolute;
   color: white;
-  font-size: 36px;
+  font-size: 28px;
+  line-height: 36px;
   text-align: center;
   width: 100%;
   top: 230px;
@@ -237,19 +137,15 @@ a {
 }
 .summer-txt2 {
   position: absolute;
-  color: #fff200;
-  font-size: 36px;
+  color: #ff6961;
+  font-size: 28px;
   text-align: center;
   width: 100%;
   top: 330px;
   font-family: arial;
 }
-
-.grad-header {
-  margin-top: 60px;
-  font-size: 36px;
-  font-family: arial;
-  padding-bottom: 30px;
+.summer-txt2:hover {
+  color:#fff599;
 }
 
 .footer {
