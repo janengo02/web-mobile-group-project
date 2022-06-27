@@ -23,7 +23,7 @@ sliderBox2.style.transform = 'translateX(' + (-size2 * counter2) + 'px)';
  	counter2++;
 
  	sliderBox2.style.transform = 'translateX(' + (-size2 * counter2) + 'px)';
- 	//console.log(counter)
+ 	console.log(counter2)
  
 };
 
@@ -56,7 +56,8 @@ function stop_slider(){
      window.clearInterval(i);
 }
 function continue_slider(){
-	setInterval(rotate, 5000)
+	setInterval(rotate, 5000);
+	setInterval(color_change, 5000);
 }
 
 //Check if page is open
@@ -66,3 +67,65 @@ document.addEventListener('visibilitychange', function() {
 	else
 		continue_slider();
 });
+
+
+
+//Slider Buttons
+
+let btn1 = document.querySelector('#btn1');
+let btn2 = document.querySelector('#btn2');
+let btn3 = document.querySelector('#btn3');
+
+btn1.addEventListener('click', () => {
+	stop_slider();
+	counter2 = 1;
+	sliderBox2.style.transition = "transform 2000ms ease-in-out";
+	sliderBox2.style.transform = 'translateX(' + (-size2 * counter2) + 'px)';
+	continue_slider();
+	color_change()
+});
+btn2.addEventListener('click', () => {
+	stop_slider();
+	counter2 = 2;
+	sliderBox2.style.transition = "transform 2000ms ease-in-out";
+	sliderBox2.style.transform = 'translateX(' + (-size2 * counter2) + 'px)';
+	continue_slider();
+	color_change()
+});
+btn3.addEventListener('click', () => {
+	stop_slider();
+	counter2 = 3;
+	sliderBox2.style.transition = "transform 2000ms ease-in-out";
+	sliderBox2.style.transform = 'translateX(' + (-size2 * counter2) + 'px)';
+	continue_slider();
+	color_change()
+});
+
+//Change colors btn (auto)
+
+function color_change(){
+	if (counter2 == 1) {
+		btn1.classList.add("this-slide");
+		btn2.classList.remove("this-slide");
+		btn3.classList.remove("this-slide");
+	}
+	if (counter2 == 2) {
+		btn2.classList.add("this-slide");
+		btn1.classList.remove("this-slide");
+		btn3.classList.remove("this-slide");
+	}
+	if (counter2 == 3) {
+		btn3.classList.add("this-slide");
+		btn2.classList.remove("this-slide");
+		btn1.classList.remove("this-slide");
+	}
+	if (counter2 == 4) {
+		btn1.classList.add("this-slide");
+		btn2.classList.remove("this-slide");
+		btn3.classList.remove("this-slide");
+	}
+}
+setInterval(color_change, 5000);
+function start_color_change() {
+	// body...
+}
