@@ -142,22 +142,28 @@ a {
 }
 .txt-img {
   display: flex;
-  width: 100%;
   padding-bottom: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+  align-items: center;
+  justify-content: center;
 }
 .undergrad-img1 {
-  height: 500px;
-  padding-bottom: 30px;
-  margin-left: 12.5%;
-  margin-top: 20px;
+  width:50%;
+  height:100%;
+  position:relative;
+  z-index:100;
+  left:0px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 6px #909090;
 }
 .txt-box {
   width: 600px;
-  margin-left: -20px;
-  margin-right: 12.5%;
   height: 540px;
+  margin-left:-20px;
   background-color: #eeeeee;
   position: relative;
+  right:0px;
   z-index: -1;
   text-align: left;
   border-radius: 12px;
@@ -165,21 +171,19 @@ a {
 }
 .undergrad-txt1 {
   margin-left: 50px;
-  font-size: 20px;
-  font-family: arial;
+  font-size: 16px;
 }
 .undergrad-ttl {
   margin-top: 60px;
   margin-left: 50px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: arial;
   padding-bottom: 10px;
 }
 .undergrad-link {
   margin-left: 50px;
   margin-top: 10px;
-  font-size: 20px;
-  font-family: arial;
+  font-size: 16px;
   color: #00548e;
 }
 .undergrad-ttl1 {
