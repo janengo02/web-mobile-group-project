@@ -168,7 +168,6 @@ section {
   display: flex;
   position: relative;
   font-weight: bold;
-  border-radius: 12px 12px 0px 0px;
 }
 section h1 {
   text-align: center;
@@ -183,9 +182,8 @@ ul {
   background-color: #F3F5F7;
   overflow: hidden;
   height: 800px;
-  border-radius: 12px;
   box-sizing: border-box;
-  padding-top: 80px;
+  padding-top: 60px;
   
 }
 ul li {
@@ -202,13 +200,13 @@ ul li {
 }
 ul li:hover {
   font-weight: bold;
-  color: #fff200;
-  background-color: #00548e;
+  color: #66ADAE;
+  background-color: #E6E7EB;
 }
 li.active {
   font-weight: bold;
-  color: #fff200;
-  background-color: #00548e;
+  color: #66ADAE;
+  background-color: #E6E7EB;
 }
 .courses-detail {
   width: 98%;
@@ -264,8 +262,8 @@ li.active {
   position: absolute;
   font-size: 16px;
   font-family: arial;
-  color: #F17D00;
+  color: #D7261A;
   font-weight: bold;
-  left: 20px;
+  left: 30px;
   top: 20px;
 }
