@@ -9,7 +9,7 @@ a {
   color: inherit;
   cursor: pointer;
 }
-a:hover {
+.socials-txt:hover {
   color: red;
   opacity: 0.8;
 }
@@ -48,7 +48,8 @@ a:hover {
   height: 150px;
   border-radius: 50%;
   margin-top: 300px;
-  right: 46%;
+  right: 50%;
+  margin-right: -75px;
 }
 .body-container {
   width: 100%;
@@ -59,17 +60,22 @@ a:hover {
   width: 100%;
   padding-top: 60px;
   display: flex;
-  width: 100%;
   padding-bottom: 60px;
+  box-sizing: border-box;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
 }
 .socials-box {
-  margin-left: 7.5%;
+  width: 30%;
+
 }
 .socials-box1 {
   margin-left: 5%;
+  width: 30%;
 }
 .socials-box2 {
   margin-left: 5%;
+  width: 30%;
 }
 .socials-txt-img {
   display: flex;
@@ -80,12 +86,16 @@ a:hover {
 }
 .socials-txt {
   margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
   padding-left: 10px;
   font-size: 24px;
   font-family: arial;
+
 }
 .socials-img {
-  height: 350px;
+  width: 100%;
+  border-radius: 8px;
 }
 
 ::placeholder {
@@ -113,37 +123,46 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  padding-left: 7.5%;
+  padding-right: 7.5%
 }
 .box-name {
   border: 1;
   border-radius: 10px;
   background-color: #eeeeee;
-  width: 200px;
+  width: 20%;
   height: 50px;
+  padding-left: 15px;
 }
 .box-name1 {
-  margin-left: 30px;
+  width: 20%;
+  margin-left: 2%;
   border: 1;
   border-radius: 10px;
   background-color: #eeeeee;
-  width: 200px;
   height: 50px;
+  padding-left: 15px;
 }
 .box-email {
-  margin-left: 30px;
+  margin-left: 2%;
   border: 1;
   border-radius: 10px;
   background-color: #eeeeee;
-  width: 400px;
+  width: 28%;
   height: 50px;
+  padding-left: 15px;
+
 }
 
 .box-message {
   border: 1;
   border-radius: 10px;
   background-color: #eeeeee;
-  width: 61.5%;
+  width: 85%;
   height: 300px;
+  box-sizing: border-box;
+  padding-left: 20px;
 }
 .map {
   position: relative;
