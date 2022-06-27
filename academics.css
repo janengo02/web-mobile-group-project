@@ -43,7 +43,7 @@ a {
   width: 50%;
   height: 100%;
   position: relative;
-  z-index: 100;
+  z-index: 2;
   left: 0px;
   border-radius: 12px;
   box-shadow: 3px 3px 6px #909090;
