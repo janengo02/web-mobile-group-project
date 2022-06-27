@@ -55,26 +55,29 @@ a {
 .body-content {
   width: 100%;
   position: relative;
-  display: flex;
+  /* display: flex; */
+  padding-left: 8%;
+  padding-right: 8%;
 }
 .body-menu {
   width: 20%;
   height: 1400px;
   position: absolute;
   background-color: #eeeeee;
-  text-align: center;
 }
 .body-btn {
   position: relative;
-  margin-right: -30%;
+  padding-left: 60px;
 }
 .body-menu-btn {
   position: relative;
   margin-top: 60px;
+  padding-left: 10px;
   align-self: center;
-  font-size: 24px;
+  text-align: left;
+  font-size: 22px;
   font-family: arial;
-  width: 150px;
+  width: 200px;
   height: 30px;
   border: 0;
   outline: 0;
@@ -84,15 +87,16 @@ a {
   font-weight: bold;
 }
 
-.howbtn{
-  color:#ed2d23;
+.howbtn {
+  color: #317db0;
 }
 
 .menu-conent {
   position: absolute;
-  width: 70%;
-  margin-left: 23%;
+  width: 45%;
+  margin-left: 380px;
   margin-top: 60px;
+  padding-right: 60px;s
 }
 .first {
   position: absolute;
@@ -132,10 +136,12 @@ a {
 .bdy-txt {
   display: flex;
   margin-top: 30px;
+  align-items: center;
+  /* justify-content: center; */
 }
 .circle {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   margin-left: 120px;
   border-radius: 50%;
   background-color: #7fa9c6;
@@ -166,19 +172,27 @@ a {
   margin-left: 20px;
   margin-top: 20px;
   font-size: 20px;
-  font-family: arial;
+  line-height: 32px;
 }
 .txt2 {
   margin-left: 20px;
   margin-top: 20px;
-  font-size: 20px;
+  color: #00497e;
+  font-style: italic;
+  font-weight: bold;
   font-family: arial;
-  color: #00548e;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+}
+.txt2:hover {
+  color: #54b8ff !important;
 }
 .txt4 {
   margin-top: 20px;
   font-size: 20px;
-  font-family: arial;
 }
 .footer {
   margin-top: 1400px;
