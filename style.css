@@ -16,18 +16,20 @@ a {
 }
 .wlcm-container {
   position: relative;
-  width: 100%;
-  max-height: 847px;
+  width: 100vw;
+  max-height: 100vh;
   overflow: hidden;
 }
 .wlcm-background {
   width: 100%;
+  height:100%;
+  margin-top:-100px;
 }
 .wlcm-shade {
   position: absolute;
   z-index: 2;
-  width: 100%;
   height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   background-color: black;
@@ -36,7 +38,7 @@ a {
 }
 .wlcm-info {
   position: absolute;
-  top: 330px;
+  top: 200px;
   left: 13%;
   color: white;
   z-index: 3;
@@ -50,12 +52,13 @@ a {
 }
 .wlcm-slogan {
   font-size: 20px;
+  font-weight:100;
+  line-height:28px;
 }
 .apply-btn {
   cursor: pointer;
   background: #ad0d09;
   display: inline-block;
-  color: red;
   padding: 14px;
   padding-left: 35px;
   padding-right: 35px;
@@ -66,10 +69,11 @@ a {
   color: white;
   font-family: arial;
   margin-top: 20px;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .apply-btn:hover {
-  opacity: 0.6;
+  background: white;
+  color: #ad0d09;
 }
 
 .news-container {
@@ -128,6 +132,9 @@ a {
   font-size: 18px;
   margin-left: 20px;
 }
+.news-text:hover {
+  color:#2574ac;
+}
 .view-more {
   width: 100%;
   text-align: right;
@@ -167,6 +174,9 @@ a {
   font-size: 19px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+.event-title:hover {
+  color:#2574ac;
 }
 .event-text {
   font-size: 14px;
@@ -230,6 +240,9 @@ a {
   left: 0;
   height: 100%;
 }
+.art-img:hover {
+  opacity:0.8;
+}
 .art-title {
   font-size: 19px;
   font-weight: bold;
@@ -237,10 +250,16 @@ a {
   margin-top: 25px;
   text-transform: uppercase;
 }
+.art-title:hover {
+  color: #00497e;
+}
 .art-author {
   margin-top: 5px;
   font-family: arial;
   font-size: 14px;
+}
+.art-author:hover {
+  color: #00497e;
 }
 .more-art-btn {
   width: 100%;
@@ -257,7 +276,7 @@ a {
   display: inline-block;
 }
 .view-btn:hover {
-  opacity: 0.6;
+  color: #00497e;
 }
 
 .banner {
@@ -319,7 +338,8 @@ a {
   cursor: pointer;
 }
 .banner-btn:hover {
-  opacity: 0.6;
+  background-color: #fff1ae;;
+  color: #00497e;
 }
 .banner-box-2 {
   position: absolute;
